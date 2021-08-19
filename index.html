@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Love, Death + Robots</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">LOVE, DEATH + ROBOTS</h1>
+    </header>
+    <section class="scoreboard" id="scoreboard">
+        <div id="user" class="scoreboard__badge scoreboard__badge--user">Human</div>
+        <div id="npc" class="scoreboard__badge scoreboard__badge--npc">Robot</div>
+        <div class="scoreboard__scores"> 
+            <span id="userScore">0</span> -
+            <span id="npcScore">0</span>
+        </div>
+    </section>
+
+    <section class="result">
+        <p class="result__message" id="result">Chose from 3 options to start the game</p>
+    </section>
+
+    <section class="choices">
+        <div class="choices__option">
+            <img class="choices__image" id="love" src="./img/love.jpg">    
+        </div>
+
+        <div class="choices__option">
+            <img class="choices__image" id="death" src="./img/death.jpg"> 
+        </div>
+
+        <div class="choices__option">
+            <img class="choices__image" id="robots" src="./img/robot.jpg"> 
+        </div>
+    </section>
+
+    <section class="rules">
+        <h1 class="rules__title">RULES</h1>
+        <p class="rules__rule">Love beats Robots</p>
+        <p class="rules__rule">Robots beats Death</p>
+        <p class="rules__rule">Death beats Love</p>
+        <p class="rules__rule rules__rule--other">to restart the game click<br>button below</p>
+        <button class="noselect" onClick="refreshPage()"></button>
+    </section>
+
+    <div class="text"></div>
+
+
+<script src="./js/main.js"></script>
+<script src="./js/scramble.js"></script>
+</body>
+</html>

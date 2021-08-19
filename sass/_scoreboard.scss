@@ -1,0 +1,88 @@
+.scoreboard {
+    margin: 0px auto 0px;
+    width: 200px;
+    animation-name: borderColorPalette;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    text-align: center;
+    font-size: 70px;
+    display: flex;
+    position: relative;
+    
+    &__badge {
+        font-weight: 600;
+        border-radius: 10px;
+        position: absolute;
+        font-size: 15px;
+        animation-name: backColorPalette;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        color: rgb(5, 5, 5);
+        padding: 3px 5px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        letter-spacing: -5px;
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: vertical-rl;
+        -webkit-text-orientation: upright;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        &--user {
+            top: 0;
+            left: -30px;
+        }
+        &--npc {
+            top: 0%;
+            right: -30px;
+        }
+    }
+    &__scores {
+        margin: auto;
+        padding-top: 5px;
+    }
+}
+
+@keyframes borderColorPalette {
+    0% {
+        border: 5px solid #ff110083;
+    }
+    25% {
+        border: 5px solid #f0cd097c;
+    }
+    50% {
+        border: 5px solid #d82f2f83;
+    }
+    75% {
+        border: 5px solid #ec782b7a;
+    }
+    100% {
+        border: 5px solid #db22ad36;
+    }
+  }
+
+  @keyframes backColorPalette {
+    0% {
+        background-color:  #ff110083;
+    }
+    25% {
+        background-color:  #f0cd097c;
+    }
+    50% {
+        background-color:  #d82f2f83;
+    }
+    75% {
+        background-color:  #ec782b7a;
+    }
+    100% {
+        background-color:  #db22ad36;
+    }
+  }

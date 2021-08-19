@@ -1,0 +1,38 @@
+.result {
+    font-size: 30px;
+    text-align: center;
+    animation-name: backgroundColorPalette;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    max-width: 25vw;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    &__message {
+        margin: auto;
+    }
+}
+
+@keyframes backgroundColorPalette {
+    0% {
+      background: #ff110083;
+    }
+    25% {
+      background: #f0cd097c;
+    }
+    50% {
+      background: #d82f2f83;
+    }
+    75% {
+      background: #ec782b7a;
+    }
+    100% {
+      background: #db22ad36;
+    }
+  }
